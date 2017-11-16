@@ -1,0 +1,186 @@
+body{
+	background-color: #02010a;
+	font-family: Dancing Script;
+}
+
+			.contenedor{
+				width: 100%;
+				max-width: 900px;
+				margin: auto;
+				overflow: hidden;
+				animation-name: intro;
+				animation-duration: .8s;
+			}
+
+					header{
+						width: 100%;
+						margin: 0;
+						background: #5b7989;
+						border-radius: 10px 10px 0 0;
+						overflow: hidden;
+
+						display: flex;
+						flex-flow: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+					}
+							header h1{
+								color: white;
+								font-size: 2em;
+								text-shadow: 2px 2px #02010a;
+								padding-left: 20px;
+							}
+							.navegador{
+								padding-right: 20px;
+							}
+									.navegador a{
+										display: inline-block;
+										color: white;
+										padding: 5px 10px;
+										line-height: normal;
+										font-size: 20px;
+										text-decoration: none;
+									}
+
+					.galeria{
+						padding: 30px;
+						background: #d5c75f;
+
+            display: flex;
+						flex-flow: row;
+						flex-wrap: wrap;
+						justify-content: space-around;
+						align-items: center;
+
+					}
+              .img1{
+                width: 28%;
+								-webkit-box-shadow: 2px 2px 2px 2px #02010a;
+                filter: blur(10px);
+                margin-bottom: 30px;
+							}
+              .img2{
+                width: 28%;
+								-webkit-box-shadow: 2px 2px 2px 2px #02010a;
+                filter: grayscale(100%);
+                margin-bottom: 30px;
+							}
+              .img3{
+                width: 28%;
+								-webkit-box-shadow: 2px 2px 2px 2px #02010a;
+                filter: sepia(90%);
+                margin-bottom: 30px;
+							}
+              .img4{
+                width: 28%;
+                -webkit-box-shadow: 2px 2px 2px 2px #02010a;
+                filter: grayscale(100%);
+              }
+              .img5{
+                width: 28%;
+                -webkit-box-shadow: 2px 2px 2px 2px #02010a;
+              }
+              .img6{
+                width: 28%;
+                -webkit-box-shadow: 2px 2px 2px 2px #02010a;
+                filter: grayscale(100%);
+              }
+
+					footer{
+						width: 100%;
+						overflow: hidden;
+						background: #C6d5c5;
+						margin-bottom: 20px;
+						border-radius: 0 0 10px 10px;
+					}
+						footer h1{
+							line-height: 0;
+						}
+						.pie-pagina{
+							padding: 20px;
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							justify-content: space-around;
+							align-items: stretch;
+						}
+								.contanto{
+									margin: 0;
+									text-align: left;
+								}
+								.terminos{
+									text-align: left;
+								}
+								.redes{
+									text-align: left;
+								}
+										}
+								.derechos{
+									text-align: left;
+								}
+
+
+/*
+MEDIA QUIRES
+*/
+
+@media screen and (max-width:900px) {
+
+	header{
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+			header h1{
+				padding: 0;
+				text-align: center;
+			}
+			.navegador{
+				padding: 10px;
+			}
+
+	.galeria{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+	}
+      .img4, .img5{
+        margin-bottom: 30px;
+      }
+      .img1, .img2, .img3, .img4, .img5, .img6{
+        width: 90%;
+      }
+}
+
+@media screen and (max-width:760px) {
+	.pie-pagina{
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+	}
+}
+
+/*
+ANIMATIONS
+*/
+
+@keyframes intro {
+	0% {
+		transform: translateY(600px);
+	}
+	50% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
